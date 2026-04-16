@@ -8,6 +8,11 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    hydrateFallbackElement: (
+      <div className="flex justify-center items-center h-screen">
+        <span className="loading loading-spinner loading-xl text-green-900"></span>
+      </div>
+    ),
     children: [
       {
         index: true,
