@@ -1,9 +1,20 @@
 import React from 'react';
 import FriendCard from './FriendCard';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useNavigation } from 'react-router';
 
 const AllFriends = () => {
     const friends = useLoaderData();
+    const navigation = useNavigation();
+
+    if (navigation.state === "loading") {
+    return (
+        <div className="flex justify-center items-center min-h-[300px] flex-col gap-4">
+            <p className="text-green-900 font-medium">Friends Loading...</p>
+            <span className="loading loading-spinner loading-lg text-green-900"></span>
+        
+        </div>
+        );
+    }
 
     return (
         <div className="container mx-auto py-10 px-4">

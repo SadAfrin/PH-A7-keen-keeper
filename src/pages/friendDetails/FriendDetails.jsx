@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { toast } from 'react-toastify';
 
@@ -9,6 +9,8 @@ import { MdDelete } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineTextsms } from "react-icons/md";
 import { IoVideocamOutline } from "react-icons/io5";
+
+import { addToLocalDB } from '../../utils/localDB';
 
 const FriendDetails = () => {
     const {friendParamId} = useParams();
@@ -35,9 +37,16 @@ const FriendDetails = () => {
     }
 
     // toast handler
-    const handleToast = (type) => {
+    const handleToastActions = (type) => {
         toast.success(`${type} with ${name}`);
+
+        addToLocalDB(type, name);
     };
+
+    // useEffect(() => {
+    //     const allData = getAllFromLocalDB();
+    //     console.log("All activities from local DB:", allData);
+    // });
 
 
     return (
@@ -114,15 +123,15 @@ const FriendDetails = () => {
                             <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
                                 <h4 className="text-xl font-bold text-green-900 mb-8">Quick Check-In</h4>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                    <button onClick={() => handleToast("Call")} className="flex flex-col items-center justify-center py-10 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all border border-gray-100 group">
+                                    <button onClick={() => handleToastActions("Call")} className="flex flex-col items-center justify-center py-10 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all border border-gray-100 group">
                                         <FiPhoneCall size={32} className="text-gray-700 group-hover:scale-110 transition-transform" />
                                         <span className="mt-3 font-bold text-gray-700">Call</span>
                                     </button>
-                                    <button onClick={() => handleToast("Text")} className="flex flex-col items-center justify-center py-10 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all border border-gray-100 group">
+                                    <button onClick={() => handleToastActions("Text")} className="flex flex-col items-center justify-center py-10 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all border border-gray-100 group">
                                         <MdOutlineTextsms size={32} className="text-gray-700 group-hover:scale-110 transition-transform" />
                                         <span className="mt-3 font-bold text-gray-700">Text</span>
                                     </button>
-                                    <button onClick={() => handleToast("Video")} className="flex flex-col items-center justify-center py-10 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all border border-gray-100 group">
+                                    <button onClick={() => handleToastActions("Video")} className="flex flex-col items-center justify-center py-10 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all border border-gray-100 group">
                                         <IoVideocamOutline size={32} className="text-gray-700 group-hover:scale-110 transition-transform" />
                                         <span className="mt-3 font-bold text-gray-700">Video</span>
                                     </button>
