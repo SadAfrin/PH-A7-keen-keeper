@@ -10,7 +10,7 @@ const Navbar = () => {
         `flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
             isActive 
             ? "bg-green-800 text-white" 
-            : "text-slate-600 hover:bg-green-100 hover:text-green-800"
+            : "text-gray-700 hover:bg-green-100 hover:text-green-800"
         }`;
 
     const links = (

@@ -8,7 +8,6 @@ import { IoVideocamOutline } from "react-icons/io5";
 const Timeline = () => {
     const allActivities = useLoaderData() || [];
     
-    // Filtering state
     const [filter, setFilter] = useState('All');
 
     // Filter logic

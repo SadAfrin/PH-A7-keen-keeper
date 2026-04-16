@@ -5,6 +5,7 @@ import Home from "../pages/home/Home";
 import FriendDetails from "../pages/friendDetails/FriendDetails";
 import Timeline from "../pages/timeline/Timeline";
 import { getAllFromLocalDB } from "../utils/localDB";
+import Stats from "../pages/stats/Stats";
 
 export const router = createBrowserRouter([
   {
@@ -28,12 +29,13 @@ export const router = createBrowserRouter([
         path: "timeline",
         element: <Timeline />,
         loader: () => {
-        return getAllFromLocalDB();
-      }
+        return getAllFromLocalDB();}
       },
       {
         path: "stats",
-        element: <div>Stats</div>
+        element: <Stats />,
+        loader: () => {
+        return getAllFromLocalDB();}
       },
       {
         path: "friendDetails/:friendParamId",
