@@ -18,15 +18,18 @@ KeenKeeper is a web application that helps users track and maintain their friend
 ### 1. 👫 Friends Card Section
 - Display all friends with photo, name, days since last contact, tags, and status days since last contact.
 - Clicking a card opens the friend details page.
-- <img width="1251" height="698" alt="image" src="https://github.com/user-attachments/assets/f5fc0369-a20a-4020-8b56-60967e723062" />
+  
+<img width="1251" height="698" alt="image" src="https://github.com/user-attachments/assets/f5fc0369-a20a-4020-8b56-60967e723062" />
 
   
 ### 2. ⚡ Friend Details Page — Button Functionality
 - Log Call, Text, or Video from friend details page, which automatically adds an entry to the timeline with a toast notification (for example, Text with Sadia).
-- <img width="1721" height="742" alt="image" src="https://github.com/user-attachments/assets/d60e661c-691a-45e6-8f8b-47b59bc45ce2" />
+  
+<img width="1721" height="742" alt="image" src="https://github.com/user-attachments/assets/d60e661c-691a-45e6-8f8b-47b59bc45ce2" />
 
   
 ### 3. 📜 Timeline history view
 - Shows all interaction history with date, type icon (Call/ Text/ Vidoe), and title to track friendship activity over time using local storage so that the data will not be vanished after refreshing.
-- <img width="1568" height="834" alt="image" src="https://github.com/user-attachments/assets/c391a2e0-245e-4574-b9de-f63698384b41" />
+
+<img width="1568" height="834" alt="image" src="https://github.com/user-attachments/assets/c391a2e0-245e-4574-b9de-f63698384b41" />
 
