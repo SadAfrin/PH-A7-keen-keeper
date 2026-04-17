@@ -1,8 +1,8 @@
 import React from 'react';
-import Logoxl from "../../assets/logo-xl.png"; 
-import InstagramIcon from "../../assets/instagram.png";
-import FacebookIcon from "../../assets/facebook.png";
-import TwitterIcon from "../../assets/twitter.png"; 
+import Logoxl from "../../../assets/logo-xl.png"; 
+import InstagramIcon from "../../../assets/instagram.png";
+import FacebookIcon from "../../../assets/facebook.png";
+import TwitterIcon from "../../../assets/twitter.png"; 
 
 const Footer = () => {
     const socialLinkStyles = "bg-white p-1 rounded-full flex items-center justify-center hover:bg-green-100 transition-colors";
@@ -10,7 +10,7 @@ const Footer = () => {
     const iconStyles = "h-14 w-14 object-contain"; 
 
     return (
-        <footer className="bg-green-900 text-slate-300 py-12 px-4 mt-auto"> 
+        <footer className="bg-green-900 text-gray-300 py-12 px-4"> 
             <div className="container mx-auto flex flex-col items-center text-center">
                 
                 <div className="mb-6">
