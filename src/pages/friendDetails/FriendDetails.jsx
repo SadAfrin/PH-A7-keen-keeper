@@ -38,7 +38,7 @@ const FriendDetails = () => {
 
     // toast handler
     const handleToastActions = (type) => {
-        toast.success(`${type} with ${name}`);
+        toast.success(`${type} with ${name}`, {position: "top-center"});
 
         addToLocalDB(type, name);
     };
