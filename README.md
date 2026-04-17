@@ -1,16 +1,32 @@
-# KEEN KEEPER
+# 👥 KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Description
 
-Currently, two official plugins are available:
+KeenKeeper is a web application that helps users track and maintain their friendships by logging interactions like calls, texts, and video chats. It also shows useful insights through a timeline and analytics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
+- React.js – Build the user interface
+- React Router – Handle page navigation
+- Tailwind CSS + DaisyUI – Styling and responsive
+- Recharts – Chart
+- React Toastify – Show toast notifications
+- React Icons – Add icons to UI elements
+- JSON – Store and fetch static friend data
+- Local Storage – Persist timeline data after refresh
 
-## React Compiler
+## Key Features
+### 1. 👫 Friends Card Section
+- Display all friends with photo, name, days since last contact, tags, and status days since last contact.
+- Clicking a card opens the friend details page.
+- <img width="1251" height="698" alt="image" src="https://github.com/user-attachments/assets/f5fc0369-a20a-4020-8b56-60967e723062" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  
+### 2. ⚡ Friend Details Page — Button Functionality
+- Log Call, Text, or Video from friend details page, which automatically adds an entry to the timeline with a toast notification (for example, Text with Sadia).
+- <img width="1721" height="742" alt="image" src="https://github.com/user-attachments/assets/d60e661c-691a-45e6-8f8b-47b59bc45ce2" />
 
-## Expanding the ESLint configuration
+  
+### 3. 📜 Timeline history view
+- Shows all interaction history with date, type icon (Call/ Text/ Vidoe), and title to track friendship activity over time using local storage so that the data will not be vanished after refreshing.
+- <img width="1568" height="834" alt="image" src="https://github.com/user-attachments/assets/c391a2e0-245e-4574-b9de-f63698384b41" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
