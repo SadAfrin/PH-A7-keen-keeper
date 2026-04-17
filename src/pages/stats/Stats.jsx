@@ -19,18 +19,15 @@ const Stats = () => {
         }
     });
 
+    const hasData = textCount > 0 || callCount > 0 || videoCount > 0;
     // Purple-500, Teal-900, Emerald-500
     const chartData = [ 
         { name: 'Call', value: callCount, fill: '#134e4a' },
         { name: 'Text', value: textCount, fill: '#8b5cf6' },   
-        { name: 'Video', value: videoCount, fill: '#10b981' }, 
-         
+        { name: 'Video', value: videoCount, fill: '#10b981' },    
     ];
 
-    const hasData = textCount > 0 || callCount > 0 || videoCount > 0;
     
-    
-
     return (
         <div className='bg-gray-50'>
             <div className="container mx-auto max-w-7xl py-10 px-4">

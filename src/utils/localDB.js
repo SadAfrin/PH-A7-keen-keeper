@@ -23,9 +23,7 @@ const addToLocalDB = (type, name) => {
         })
     };
 
-    
     const updatedActivities = [newEntry, ...previousActivities];
-    
     localStorage.setItem('user_activities', JSON.stringify(updatedActivities));
 }
 

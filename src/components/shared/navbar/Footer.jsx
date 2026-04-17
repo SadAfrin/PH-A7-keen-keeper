@@ -6,7 +6,6 @@ import TwitterIcon from "../../../assets/twitter.png";
 
 const Footer = () => {
     const socialLinkStyles = "bg-white p-1 rounded-full flex items-center justify-center hover:bg-green-100 transition-colors";
-    
     const iconStyles = "h-14 w-14 object-contain"; 
 
     return (
@@ -35,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* 3. Bottom Bar: Copyright and Legal */}
+                {/* Copyright */}
                 <div className="w-full border-t border-green-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs opacity-70">
                     <p>© {new Date().getFullYear()} KeenKeeper. All rights reserved.</p>
                     

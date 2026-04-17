@@ -26,27 +26,27 @@ const Banner = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto border-b border-gray-300 pb-12">
                     {/* Card 1 */}
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center">
+                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center">
                         <h2 className="text-4xl font-bold text-green-900 mb-2">{friends.length}</h2>
-                        <p className="text-slate-500 font-medium">Total Friends</p>
+                        <p className="text-gray-500 font-medium">Total Friends</p>
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center">
+                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center">
                         <h2 className="text-4xl font-bold text-green-900 mb-2">{onTrackCount}</h2>
-                        <p className="text-slate-500 font-medium">On Track</p>
+                        <p className="text-gray-500 font-medium">On Track</p>
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center">
+                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center">
                         <h2 className="text-4xl font-bold text-green-900 mb-2">6</h2>
-                        <p className="text-slate-500 font-medium">Need Attention</p>
+                        <p className="text-gray-500 font-medium">Need Attention</p>
                     </div>
 
                     {/* Card 4 */}
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center">
+                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center">
                         <h2 className="text-4xl font-bold text-green-900 mb-2">12</h2>
-                        <p className="text-slate-500 font-medium">Interactions This Month</p>
+                        <p className="text-gray-500 font-medium">Interactions This Month</p>
                     </div>
                 </div>
             </div>

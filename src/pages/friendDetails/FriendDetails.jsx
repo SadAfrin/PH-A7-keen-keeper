@@ -43,11 +43,6 @@ const FriendDetails = () => {
         addToLocalDB(type, name);
     };
 
-    // useEffect(() => {
-    //     const allData = getAllFromLocalDB();
-    //     console.log("All activities from local DB:", allData);
-    // });
-
 
     return (
         <div className='bg-gray-50'>

@@ -37,9 +37,9 @@ const Navbar = () => {
     );
 
     return (
-        <div className="bg-white border-b border-slate-200 shadow-sm">
+        <div className="bg-white border-b border-gray-200 shadow-sm">
             <div className="navbar container mx-auto px-4">
-                {/* Logo Section */}
+                {/* Logo Section with small screen */}
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

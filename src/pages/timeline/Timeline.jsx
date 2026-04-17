@@ -50,12 +50,10 @@ const Timeline = () => {
                             key={item.activityId} 
                             className="flex items-center gap-5 p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-xl"
                         >
-                            {/* Icon Wrapper */}
                             <div className="p-3 bg-gray-50 rounded-xl">
                                 {getIcon(item.category)}
                             </div>
 
-                            {/* Text Content */}
                             <div>
                                 <h3 className="font-bold text-gray-800">
                                     {item.category} <span className="font-normal text-gray-400">with {item.friendName}</span>
