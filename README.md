@@ -49,6 +49,16 @@
 
 ```bash
 git clone https://github.com/SadAfrin/PH-A7-keen-keeper.git
+```
+
+```bash
 cd PH-A7-keen-keeper
+```
+
+```bash
 npm install
-npm start
+```
+
+```bash
+npm run dev
+```
